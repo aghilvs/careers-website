@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>RJ Homes</title>
+  </head>
+  <body>
+    <h1>RJ Homes</h1>
+    <img src="https://63c1cc85-2c1d-45ee-b97b-45911b7083ad-00-2ia48guhsd5lo.pike.replit.dev/static/bannerwebsite.jpg"
+      height=400px width=100% alt="banner">
+    <h2>About {{name}} Homes</h2>
+    <p class="container">
+      Lorem ipsum odor amet, consectetuer adipiscing elit. Molestie mus pretium faucibus phasellus velit et phasellus ultricies? Gravida nunc pulvinar quis torquent sagittis quis. Curae arcu amet nam morbi ullamcorper parturient. Urna torquent cras lectus; velit mollis eget. Rhoncus arcu nostra vehicula egestas quis nostra quisque sem! Nibh dictum neque lacinia rhoncus non dis interdum sed.
+
+      Risus ultrices pulvinar pretium in litora iaculis velit, risus aliquam. Quisque nostra porta nostra etiam sollicitudin potenti semper. Nulla ac ut, dui dolor vehicula sollicitudin. Tortor ipsum venenatis per urna ante inceptos aliquet commodo. Commodo et curae tristique ornare suspendisse varius commodo sem turpis. Pellentesque egestas dis blandit aliquam fringilla metus pretium. Nam pretium accumsan risus condimentum platea penatibus. Mollis id congue curabitur non ad. Suspendisse arcu netus habitant aliquet lacinia.
+    </p>
+    <h2>Open Positions</h2>
+    <div>
+      <!-- {{jobs}} --><!-- This is provided by Flask(Templating Syntax) a way to insert dynamic data into your HTML-->
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {% endfor %}
+    </div>
+    <button type="button" class="btn btn-primary">Contact Us</button>
+  </body>
+
+</html>
